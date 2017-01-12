@@ -17,8 +17,8 @@ The Engineering Vibration  Toolbox is a set of over 35 educational
 programs and associated files by `Joseph C.
 Slater <http://josephcslater.github.io>`__.
 It can be run on any platform supported by
-`Matlab <http://www.mathworks.com/>`__ or
-`Octave <http://www.octave.org>`__  (Mac, Windows, VMS, Unix, Cygwin). Also
+`Matlab <http://www.mathworks.com/>`__
+`Octave <http://www.octave.org>`__  (Mac, Windows, VMS, Unix, Cygwin), or `Python <python.org>`__. Also
 included are help files, examples, and files containing raw
 experimental data. The codes include single degree of freedom
 response, response spectrum, finite elements, numerical integration,
@@ -27,7 +27,7 @@ the text "Engineering Vibration" by `Prof. Daniel J. Inman <http://www.engin.umi
 Hall <http://www.prenhall.com>`__).
 
 I highly recommend use of
-`Octave <http://www.octave.org>`__ or Python if possible, as they are free. If you know `Matlab <http://www.mathworks.com/>`__, you already
+`Octave <http://www.octave.org>`__ or `Python <python.org>`__ if possible, as they are free. If you know `Matlab <http://www.mathworks.com/>`__, you already
 know most of `Octave <http://www.octave.org>`__. Most students will hardly know the difference,
 except that it's free! The *Octavized*
 toolbox can be found `here <ovtoolbox>`__. Further, the licensing is
