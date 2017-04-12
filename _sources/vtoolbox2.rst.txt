@@ -2,16 +2,16 @@
 Download and Installation
 ==============================
 
-The Engineering Vibration Toolbox for Python
------------------------------------------------------------
+`The Engineering Vibration Toolbox for Python`_
+-----------------------------------------------
 
-Installing the Engineering Vibration Toolbox on Python is as easy as using the `Pip Installs Packages <https://pip.pypa.io/en/stable/>`__. While you can read the references there the easy way to install is to simply type
+Installing the Engineering Vibration Toolbox on Python is as easy as using the `Pip Installs Packages <https://pip.pypa.io/en/stable/>`__. While you can read the `references <http://vibrationtoolbox.github.io/vibration_toolbox/>`__ there the easy way to install is to simply type
 
 .. code-block:: python
 
    pip install --user vibration_toolbox
 
-Usage is very different from the Matlab/Octave versions and the code is still under development on the `github <https://github.com/vibrationtoolbox/vibration_toolbox>`__ website.
+Usage is very different from the Matlab/Octave versions and has advanced capabilities not found in the other versions.
 
 
 The Engineering Vibration Toolbox for `Matlab`_
@@ -69,8 +69,8 @@ Removing the Engineering Vibration Toolbox:
 Type :code:`vtbud` from the Matlab prompt.
 
 
-The Engineering Vibration Toolbox for Octave
--------------------------------------------------------
+The Engineering Vibration Toolbox for `Octave <octave.org>`__
+-------------------------------------------------------------
 Please read the `Readme.rst
 <https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst>`__
 file for information not covered elsewhere.
@@ -377,5 +377,7 @@ Microsoft Corp. Unix is a registered trademark of AT&T.
 .. _Linux: http://www.linux.com
 
 .. _VirtualBox: http://www.virtualbox.org
+
+.. _The Engineering Vibration Toolbox for Python: http://vibrationtoolbox.github.io/vibration_toolbox/
 
 .. |mlp| unicode:: U+00BB .. matlab prompt
