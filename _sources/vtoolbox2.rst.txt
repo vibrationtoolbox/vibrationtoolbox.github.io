@@ -68,6 +68,7 @@ Removing the Engineering Vibration Toolbox:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Type :code:`vtbud` from the Matlab prompt.
 
+.. _ovinstall:
 
 The Engineering Vibration Toolbox for `Octave <octave.org>`__
 -------------------------------------------------------------
