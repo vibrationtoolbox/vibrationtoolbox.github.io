@@ -56,5 +56,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`search`
 
-.. _python: http://python.org
-.. _Python: http://python.org
+.. _python: https://www.scipy.org/index.html
+.. _Python: https://www.scipy.org/index.html
