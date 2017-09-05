@@ -18,7 +18,7 @@ The Engineering Vibration Toolbox for `Matlab`_
 -----------------------------------------------------------
 
 .. warning::
-   Installation of the Vibration Toolbox via the easy method is broken due to recent updates to Matlab_. Please see the section Installing on `Contributing.rst <https://github.com/vibrationtoolbox/vtoolbox/blob/master/CONTRIBUTING.rst>`_ . I apologize for the inconvenience. 
+   Installation of the Vibration Toolbox via the easy method may be broken for some due to recent updates to Matlab_. Please see the section Installing on `Contributing.rst <https://github.com/vibrationtoolbox/vtoolbox/blob/master/CONTRIBUTING.rst>`_ if your install doesn't work and `report the issue on github <https://github.com/vibrationtoolbox/vtoolbox/issues>`_. I apologize for the inconvenience. 
 
 
 
