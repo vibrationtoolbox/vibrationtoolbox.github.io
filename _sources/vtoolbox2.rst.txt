@@ -17,6 +17,11 @@ Usage is very different from the Matlab/Octave versions and has advanced capabil
 The Engineering Vibration Toolbox for `Matlab`_
 -----------------------------------------------------------
 
+.. warning::
+   Installation of the Vibration Toolbox via the easy method is broken due to recent updates to Matlab_. Please see the section Installing on `Contributing.rst <https://github.com/vibrationtoolbox/vtoolbox/blob/master/CONTRIBUTING.rst>`_ . I apologize for the inconvenience. 
+
+
+
 The Engineering Vibration Toolbox can be installed by downloading
 `vtbud.m`_ and executing it from within Matlab. Executing it
 later also installs or removes the toolbox. You will get an error if ``vtbud.m`` is not in your
