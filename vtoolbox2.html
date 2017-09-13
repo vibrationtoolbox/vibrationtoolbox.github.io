@@ -53,26 +53,35 @@
 </div>
 <div class="section" id="the-engineering-vibration-toolbox-for-matlab">
 <h2>The Engineering Vibration Toolbox for <a class="reference external" href="http://www.mathworks.com">Matlab</a><a class="headerlink" href="#the-engineering-vibration-toolbox-for-matlab" title="Permalink to this headline">¶</a></h2>
+<p>The Engineering Vibration Toolbox can be installed by downloading
+<a class="reference external" href="https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m">vtbud.m</a> and executing it from within <a class="reference external" href="http://www.mathworks.com">Matlab</a>. Executing it after installation
+later updates or removes the toolbox per user selection.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Installation of the Vibration Toolbox via the easy method may be broken for some due to recent updates to <a class="reference external" href="http://www.mathworks.com">Matlab</a>. Please see the section Installing on <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/blob/master/CONTRIBUTING.rst">Contributing.rst</a> if your install doesn’t work and <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/issues">report the issue on github</a>. I apologize for the inconvenience.</p>
+<p class="last">You will get an error if <code class="docutils literal"><span class="pre">vtbud.m</span></code> is not in your path.
+Installation of the Vibration Toolbox via the easy method may be broken if you have multiple instances of vtoolbox files installed. If you duplicate or otherwise modify the files, please rename them and move them outside the toolbox folder. If that happens, open <code class="docutils literal"><span class="pre">vtbud.m</span></code> in the <a class="reference external" href="http://www.mathworks.com">Matlab</a> editor and press the F5 key.</p>
 </div>
-<p>The Engineering Vibration Toolbox can be installed by downloading
-<a class="reference external" href="https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m">vtbud.m</a> and executing it from within Matlab. Executing it
-later also installs or removes the toolbox. You will get an error if <code class="docutils literal"><span class="pre">vtbud.m</span></code> is not in your
-path. If that happens, open <code class="docutils literal"><span class="pre">vtbud.m</span></code> in the Matlab editor and press the F5 key. This will download
-<code class="docutils literal"><span class="pre">vtoolbox.zip</span></code>, expand it in the desired location, and add the path to it to
-your default Matlab path. Alternatively, copy and
-paste this into your Matlab command console:</p>
-<div class="highlight-matlab"><div class="highlight"><pre><span></span>» <span class="n">urlwrite</span><span class="p">(</span><span class="s">&#39;https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m&#39;</span><span class="p">,</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">);</span><span class="n">vtbud</span>
+<p>This will download <code class="docutils literal"><span class="pre">vtoolbox.zip</span></code>, expand it in the desired location, and add the path to it to your default <a class="reference external" href="http://www.mathworks.com">Matlab</a> path.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">After installation has completed you must delete the <code class="docutils literal"><span class="pre">vtbud.m</span></code> file that you saved. The location is listed in your <a class="reference external" href="http://www.mathworks.com">Matlab</a> console.</p>
+</div>
+<p>Alternatively, copy and
+paste this into your <a class="reference external" href="http://www.mathworks.com">Matlab</a> command console:</p>
+<div class="highlight-matlab"><div class="highlight"><pre><span></span>»  <span class="n">urlwrite</span><span class="p">(</span><span class="s">&#39;https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m&#39;</span><span class="p">,</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">);</span><span class="n">vtbud</span><span class="p">;</span><span class="n">delete</span> <span class="n">vtbud</span><span class="p">.</span><span class="n">m</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>and press RETURN.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If your current working directory is not writable (you don’t own it in the sense of computer security), this line will fail. In that case you need to use the <a class="reference external" href="http://www.mathworks.com">Matlab</a> <a class="reference external" href="https://www.mathworks.com/help/matlab/ref/cd.html">cd command</a> to change to a different directory or manually download <code class="docutils literal"><span class="pre">vtbud.m</span></code> before you run this line.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Do not store any data or personal files inside the vtoolbox directory. They may be deleted or overwritten.</p>
+</div>
 <p>The current revision status of the <a class="reference external" href="https://vibrationtoolbox.github.io">Engineering Vibration Toolbox</a> for
-Matlab can
-be viewed in the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox">github
-repository</a> or more
-easily in the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt">vtbud.txt</a> file on this website.</p>
+<a class="reference external" href="http://www.mathworks.com">Matlab</a> can be viewed in the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox">github repository</a> or more easily in the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt">vtbud.txt</a> file on this website.</p>
 <div class="section" id="troubleshooting">
 <h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h3>
 <p>A list of updates since 1/1/98
