@@ -5,6 +5,8 @@ Download and Installation
 `The Engineering Vibration Toolbox for Python`_
 -----------------------------------------------
 
+`Try it online now!  <https://mybinder.org/v2/gh/vibrationtoolbox/vibration_toolbox/binder>`_
+
 Installing the Engineering Vibration Toolbox on Python is as easy as using  `pip`. The easy way to install is to simply type
 
 .. code-block:: python
