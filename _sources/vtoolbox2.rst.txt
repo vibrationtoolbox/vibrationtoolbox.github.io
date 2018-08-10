@@ -147,7 +147,7 @@ Copy and paste this into your Octave window
 
 		   cd Downloads
 		   rename('ovtoolbox-master.zip','vtoolbox.zip')
-		   pkg install vtoolbox.zip
+		   stall vtoolbox.zip
 		   delete('vtoolbox.zip')
 		   ;
 
@@ -162,7 +162,7 @@ Linux and Mac Installation
 .. code-block:: octave
 
    [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
+   pkg install -auto vtoolbox.zip
    delete('vtoolbox.zip')
    vtb
    ;
@@ -178,7 +178,7 @@ the install for you (copy and paste this at the Octave prompt)
 
 **Note**: If you use the Download button on `github <github.com>`__, you **must** rename
 the downloaded file to :code:`vtoolbox.zip` and manually use
-:code:`pkg install vtoolbox.zip` after renaming the downloaded ``zip``
+:code:`pkg install -auto vtoolbox.zip` after renaming the downloaded ``zip``
 file to ``vtoolbox.zip``.
 
 To update:
@@ -191,7 +191,7 @@ Otherwise, run `Octave`_ and paste the following to the prompt:
 
    pkg uninstall vtoolbox
    [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
+   pkg install -auto vtoolbox.zip
    delete('vtoolbox.zip')
    ;
 
@@ -216,12 +216,11 @@ To remove it completely, in `Octave`_
 
    pkg uninstall vtoolbox
    [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
+   pkg install -auto vtoolbox.zip
    delete('vtoolbox.zip')
    ;
 
-You may have to look around and make sure no files ``vtoolbox.zip``, ``master.zip``, or
-similar exist.
+You may have to look around and make sure no files ``vtoolbox.zip``, ``master.zip``, or similar exist.
 
 *Why the semi-colons?* It's my way of making sure you don't leave the
 last command unexecuted.
