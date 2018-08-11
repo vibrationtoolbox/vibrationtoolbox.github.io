@@ -55,7 +55,7 @@ Troubleshooting
 
 A list of updates since 1/1/98
 can be obtained for your current version by typing :code:`help vtbud` in
-Matlab. That can be compared to the `most up-to-date release <https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt>`__.
+Matlab. That can be compared to the `most up-to-date release <https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt>`_.
 
 They will load/run on all platforms supported by Matlab. The binary files are all ``.mat`` files, and the different extensions represent different parts of a project group. To load
 them type:
@@ -82,27 +82,29 @@ Type :code:`vtbud` from the Matlab prompt.
 
 .. _ovinstall:
 
-The Engineering Vibration Toolbox for `Octave <octave.org>`__
+The Engineering Vibration Toolbox for `Octave`_
 -------------------------------------------------------------
 Please read the `Readme.rst
-<https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst>`__
+<https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst>`_
 file for information not covered elsewhere.
 
-Installing, Updating, and Removing The Toolbox
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Installing Octave
+~~~~~~~~~~~~~~~~~
+
+Just like Python or Matlab, there are two steps. First, install Octave, then install the Engineering Vibration Toolbox
+
+Installing Octave on Windows
+****************************
+
+The availability of a simple `Octave installer for Windows <https://www.gnu.org/software/octave/download.html>`_ has been
+sporadic. At the moment (11-August-2018) there is one available at the link in the preceding sentence. I do
+recommend that path when available. When it's not, `Cygwin`_ is a reliable, if more difficult, alternative.
 
 
-Windows Installation
-**********************************
+In order to install Octave via Cygwin (**Not your easiest method!**):
 
-The availability of a simple `Octave installer for Windows <octave.org>`__ has been
-sporadic. At the moment (30-March-2016) there is one available. I do
-recommend that path when available, but when it's not, `Cygwin <cygwin.com>`__ is a reliable alternative.
-
-
-In order to install Octave via Cygwin:
-
-1. Download and install `Cygwin <cygwin.com>`__.
+1. Download and install `Cygwin`_.
 
 2. You may have to run setup multiple times to install the parts you
    need. Install, at minimum:
@@ -118,42 +120,49 @@ In order to install Octave via Cygwin:
 4. A green X should appear on the dock. You should be able to bring up
    a menu to launch ``Octave``
 
-5. `Click on this
-   <https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip>`__
-   to download the vibration toolbox to your Downloads folder.
+Installing Octave on Mac
+************************
+
+Installing Octave on a Mac will take multiple steps. Please see `Octave for MacOS <https://wiki.octave.org/Octave_for_macOS>`_. I personally use the `MacPorts method <macports.org>`_
+
+Installing Octave on Linux
+**************************
+
+Octave is available as a package install on most Linux distributions.
+
+Summary
+*******
+
+If you can't get it to work on Mac or Windows, installing on Ubuntu is easy. So, you can always use `VirtualBox`_ and run it in a virtual machine (for free). I do for my testing, so indeed it works just fine.
+
+
+Installing, Updating, and Removing The Toolbox
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Windows Installation
+********************
+
+`Click on this
+<https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip>`_
+to download the vibration toolbox to your Downloads folder.
 
 Copy and paste this into your Octave window
 
 .. code-block:: octave
 
-		system('curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m>vtbud.m')
+	  system('curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m>vtbud.m')
 		vtbud
 		delete('vtbud.m')
 
-..
-   Here you will see a list of users on your computer. You need to figure
-   out which one is you. For me, it's `Joseph C. Slater`. So for my
-   installation  I continue
-   with (note the single quotes)
+.. note::
 
-   .. code-block:: octave
-
-		   cd 'Joseph C. Slater'
-
-   You should be able to copy and paste the rest of this into Octave to
-   complete the process.
-
-   .. code-block:: octave
-
-		   cd Downloads
-		   rename('ovtoolbox-master.zip','vtoolbox.zip')
-		   stall vtoolbox.zip
-		   delete('vtoolbox.zip')
-		   ;
-
+   You must ``pkg load vtoolbox`` each time you run Octave if you do not put this command in you ``~/.octaverc`` file. If editing of this doesn't happen automatically, and you want this behavior, type ``edit('~/.octaverc')`` at you Octave prompt to edit it yourself.
 
 Linux and Mac Installation
-*****************************
+**************************
+
+Linux and MacOS are very similar underneath, so instructions apply equally.
 
 1. Run `Octave`_.
 
@@ -162,7 +171,7 @@ Linux and Mac Installation
 .. code-block:: octave
 
    [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install -auto vtoolbox.zip
+   pkg install vtoolbox.zip
    delete('vtoolbox.zip')
    vtb
    ;
@@ -176,13 +185,18 @@ the install for you (copy and paste this at the Octave prompt)
 		vtbud
 		delete('vtbud.m')
 
-**Note**: If you use the Download button on `github <github.com>`__, you **must** rename
+**Note**: If you use the Download button on `github <github.com>`_, you **must** rename
 the downloaded file to :code:`vtoolbox.zip` and manually use
-:code:`pkg install -auto vtoolbox.zip` after renaming the downloaded ``zip``
+:code:`pkg install vtoolbox.zip` after renaming the downloaded ``zip``
 file to ``vtoolbox.zip``.
 
+.. note::
+
+   You must ``pkg load vtoolbox`` each time you run Octave if you do not put this command in you ``~/.octaverc`` file. If editing of this doesn't happen automatically, and you want this behavior, type ``edit('~/.octaverc')`` at you Octave prompt to edit it yourself.
+
+
 To update:
-****************
+**********
 To update, run :code:`vtbud` in `Octave`_ if you have updated since Feb 23, 2016.
 
 Otherwise, run `Octave`_ and paste the following to the prompt:
@@ -191,14 +205,13 @@ Otherwise, run `Octave`_ and paste the following to the prompt:
 
    pkg uninstall vtoolbox
    [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install -auto vtoolbox.zip
+   pkg install vtoolbox.zip
    delete('vtoolbox.zip')
    ;
 
 
-
 To remove:
-*****************
+**********
 
 Because it takes so little space (trivial compared to a small Word
 document), I would suggest simply deactivating it
@@ -210,13 +223,15 @@ In `Octave`_
 
    pkg unload vtoolbox
 
+This will hide it but leave it available. You may also want to ``edit('~/.octaverc')`` to stop it from loading each time you run Octave.
+
 To remove it completely, in `Octave`_
 
 .. code-block:: octave
 
    pkg uninstall vtoolbox
    [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install -auto vtoolbox.zip
+   pkg install vtoolbox.zip
    delete('vtoolbox.zip')
    ;
 
@@ -377,7 +392,7 @@ Microsoft Corp. Unix is a registered trademark of AT&T.
 
 .. _`vtbud.m`: https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m
 
-.. _Octave Windows: http://wiki.octave.org/Octave_for_Microsoft_Windows
+.. _`Octave Windows`: http://wiki.octave.org/Octave_for_Microsoft_Windows
 
 .. _GPLv3: http://www.gnu.org/copyleft/gpl.html
 

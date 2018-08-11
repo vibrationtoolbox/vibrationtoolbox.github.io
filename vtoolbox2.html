@@ -103,19 +103,20 @@ ASCII (text) format.</p>
 </div>
 </div>
 <div class="section" id="the-engineering-vibration-toolbox-for-octave">
-<span id="ovinstall"></span><h2>The Engineering Vibration Toolbox for <a class="reference external" href="octave.org">Octave</a><a class="headerlink" href="#the-engineering-vibration-toolbox-for-octave" title="Permalink to this headline">¶</a></h2>
+<span id="ovinstall"></span><h2>The Engineering Vibration Toolbox for <a class="reference external" href="http://www.octave.org/">Octave</a><a class="headerlink" href="#the-engineering-vibration-toolbox-for-octave" title="Permalink to this headline">¶</a></h2>
 <p>Please read the <a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst">Readme.rst</a>
 file for information not covered elsewhere.</p>
-<div class="section" id="installing-updating-and-removing-the-toolbox">
-<h3>Installing, Updating, and Removing The Toolbox<a class="headerlink" href="#installing-updating-and-removing-the-toolbox" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="windows-installation">
-<h4>Windows Installation<a class="headerlink" href="#windows-installation" title="Permalink to this headline">¶</a></h4>
-<p>The availability of a simple <a class="reference external" href="octave.org">Octave installer for Windows</a> has been
-sporadic. At the moment (30-March-2016) there is one available. I do
-recommend that path when available, but when it’s not, <a class="reference external" href="cygwin.com">Cygwin</a> is a reliable alternative.</p>
-<p>In order to install Octave via Cygwin:</p>
+<div class="section" id="installing-octave">
+<h3>Installing Octave<a class="headerlink" href="#installing-octave" title="Permalink to this headline">¶</a></h3>
+<p>Just like Python or Matlab, there are two steps. First, install Octave, then install the Engineering Vibration Toolbox</p>
+<div class="section" id="installing-octave-on-windows">
+<h4>Installing Octave on Windows<a class="headerlink" href="#installing-octave-on-windows" title="Permalink to this headline">¶</a></h4>
+<p>The availability of a simple <a class="reference external" href="https://www.gnu.org/software/octave/download.html">Octave installer for Windows</a> has been
+sporadic. At the moment (11-August-2018) there is one available at the link in the preceding sentence. I do
+recommend that path when available. When it’s not, <a class="reference external" href="https://www.cygwin.com/">Cygwin</a> is a reliable, if more difficult, alternative.</p>
+<p>In order to install Octave via Cygwin (<strong>Not your easiest method!</strong>):</p>
 <ol class="arabic simple">
-<li>Download and install <a class="reference external" href="cygwin.com">Cygwin</a>.</li>
+<li>Download and install <a class="reference external" href="https://www.cygwin.com/">Cygwin</a>.</li>
 <li>You may have to run setup multiple times to install the parts you
 need. Install, at minimum:<ol class="loweralpha">
 <li><code class="docutils literal notranslate"><span class="pre">Octave</span></code> (Math section- octave: GNU Octave language…)</li>
@@ -126,24 +127,47 @@ need. Install, at minimum:<ol class="loweralpha">
 <li>Go to the Windows Menu. In <code class="docutils literal notranslate"><span class="pre">Cygwin-X</span></code> run <code class="docutils literal notranslate"><span class="pre">XWin</span> <span class="pre">Server</span></code></li>
 <li>A green X should appear on the dock. You should be able to bring up
 a menu to launch <code class="docutils literal notranslate"><span class="pre">Octave</span></code></li>
-<li><a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip">Click on this</a>
-to download the vibration toolbox to your Downloads folder.</li>
 </ol>
+</div>
+<div class="section" id="installing-octave-on-mac">
+<h4>Installing Octave on Mac<a class="headerlink" href="#installing-octave-on-mac" title="Permalink to this headline">¶</a></h4>
+<p>Installing Octave on a Mac will take multiple steps. Please see <a class="reference external" href="https://wiki.octave.org/Octave_for_macOS">Octave for MacOS</a>. I personally use the <a class="reference external" href="macports.org">MacPorts method</a></p>
+</div>
+<div class="section" id="installing-octave-on-linux">
+<h4>Installing Octave on Linux<a class="headerlink" href="#installing-octave-on-linux" title="Permalink to this headline">¶</a></h4>
+<p>Octave is available as a package install on most Linux distributions.</p>
+</div>
+<div class="section" id="summary">
+<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h4>
+<p>If you can’t get it to work on Mac or Windows, installing on Ubuntu is easy. So, you can always use <a class="reference external" href="http://www.virtualbox.org">VirtualBox</a> and run it in a virtual machine (for free). I do for my testing, so indeed it works just fine.</p>
+</div>
+</div>
+<div class="section" id="installing-updating-and-removing-the-toolbox">
+<h3>Installing, Updating, and Removing The Toolbox<a class="headerlink" href="#installing-updating-and-removing-the-toolbox" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="windows-installation">
+<h4>Windows Installation<a class="headerlink" href="#windows-installation" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip">Click on this</a>
+to download the vibration toolbox to your Downloads folder.</p>
 <p>Copy and paste this into your Octave window</p>
 <div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="nb">system</span><span class="p">(</span><span class="s">&#39;curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m&gt;vtbud.m&#39;</span><span class="p">)</span>
-<span class="n">vtbud</span>
-<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">)</span>
+      <span class="n">vtbud</span>
+      <span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must <code class="docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">load</span> <span class="pre">vtoolbox</span></code> each time you run Octave if you do not put this command in you <code class="docutils literal notranslate"><span class="pre">~/.octaverc</span></code> file. If editing of this doesn’t happen automatically, and you want this behavior, type <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> at you Octave prompt to edit it yourself.</p>
 </div>
 </div>
 <div class="section" id="linux-and-mac-installation">
 <h4>Linux and Mac Installation<a class="headerlink" href="#linux-and-mac-installation" title="Permalink to this headline">¶</a></h4>
+<p>Linux and MacOS are very similar underneath, so instructions apply equally.</p>
 <ol class="arabic simple">
 <li>Run <a class="reference external" href="http://www.octave.org/">Octave</a>.</li>
 <li>Copy and paste this into <a class="reference external" href="http://www.octave.org/">Octave</a>.</li>
 </ol>
 <div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">pkg</span> <span class="n">install</span> <span class="o">-</span><span class="n">auto</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
+<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
 <span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
 <span class="n">vtb</span>
 <span class="p">;</span>
@@ -158,8 +182,12 @@ the install for you (copy and paste this at the Octave prompt)</p>
 </div>
 <p><strong>Note</strong>: If you use the Download button on <a class="reference external" href="github.com">github</a>, you <strong>must</strong> rename
 the downloaded file to <code class="code docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code> and manually use
-<code class="code docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">install</span> <span class="pre">-auto</span> <span class="pre">vtoolbox.zip</span></code> after renaming the downloaded <code class="docutils literal notranslate"><span class="pre">zip</span></code>
+<code class="code docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">install</span> <span class="pre">vtoolbox.zip</span></code> after renaming the downloaded <code class="docutils literal notranslate"><span class="pre">zip</span></code>
 file to <code class="docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must <code class="docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">load</span> <span class="pre">vtoolbox</span></code> each time you run Octave if you do not put this command in you <code class="docutils literal notranslate"><span class="pre">~/.octaverc</span></code> file. If editing of this doesn’t happen automatically, and you want this behavior, type <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> at you Octave prompt to edit it yourself.</p>
+</div>
 </div>
 <div class="section" id="to-update">
 <h4>To update:<a class="headerlink" href="#to-update" title="Permalink to this headline">¶</a></h4>
@@ -167,7 +195,7 @@ file to <code class="docutils literal notranslate"><span class="pre">vtoolbox.zi
 <p>Otherwise, run <a class="reference external" href="http://www.octave.org/">Octave</a> and paste the following to the prompt:</p>
 <div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">uninstall</span> <span class="n">vtoolbox</span>
 <span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">pkg</span> <span class="n">install</span> <span class="o">-</span><span class="n">auto</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
+<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
 <span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
 <span class="p">;</span>
 </pre></div>
@@ -181,10 +209,11 @@ document), I would suggest simply deactivating it</p>
 <div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">unload</span> <span class="n">vtoolbox</span>
 </pre></div>
 </div>
+<p>This will hide it but leave it available. You may also want to <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> to stop it from loading each time you run Octave.</p>
 <p>To remove it completely, in <a class="reference external" href="http://www.octave.org/">Octave</a></p>
 <div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">uninstall</span> <span class="n">vtoolbox</span>
 <span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">pkg</span> <span class="n">install</span> <span class="o">-</span><span class="n">auto</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
+<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
 <span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
 <span class="p">;</span>
 </pre></div>
