@@ -197,7 +197,7 @@ docs:
 	# pip install sphinx-bootstrap-theme numpydoc sphinx ghp-import
 	# Run the make file in the docs directory
 	# make -C clean
-	make -C html
+	make  html
 
 gh-pages:
 	git checkout master
