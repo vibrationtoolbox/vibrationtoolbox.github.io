@@ -191,6 +191,14 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
+docs:
+	# Warnings become errors and stop build
+	export SPHINXOPTS=-W
+	# pip install sphinx-bootstrap-theme numpydoc sphinx ghp-import
+	# Run the make file in the docs directory
+	make -C docs clean
+	make -C docs html
+
 gh-pages:
 	git checkout master
 	git pull origin master
