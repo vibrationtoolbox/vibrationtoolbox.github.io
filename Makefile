@@ -7,6 +7,10 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
 
+export GHP_MSG="Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`"
+export VERSION=`python -c "import $(NAME); print($(NAME).__version__)"`
+
+
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
 $(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx installed, then set the SPHINXBUILD environment variable to point to the full path of the '$(SPHINXBUILD)' executable. Alternatively you can add the directory with the executable to your PATH. If you don't have Sphinx installed, grab it from http://sphinx-doc.org/)
@@ -197,7 +201,7 @@ docs:
 	# pip install sphinx-bootstrap-theme numpydoc sphinx ghp-import
 	# Run the make file in the docs directory
 	# make -C clean
-	make  html
+	make html
 
 gh-pages:
 	git checkout master
