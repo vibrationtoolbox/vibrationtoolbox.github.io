@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Download and Installation &#8212; The Engineering Vibration Toolbox</title>
+    <title>Overview &#8212; The Engineering Vibration Toolbox</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,6 +15,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python" href="python.html" />
     <link rel="prev" title="The Engineering Vibration Toolbox" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -34,217 +35,64 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="download-and-installation">
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>The Engineering Vibration Toolbox is a set of over 35 educational
+programs and associated files by <a class="reference external" href="http://josephcslater.github.io">Joseph C.
+Slater</a> (Python version with Raphael Timbó).
+It can be run on any platform supported by
+<a class="reference external" href="http://www.mathworks.com/">Matlab</a>
+<a class="reference external" href="http://www.octave.org">Octave</a>  (Mac, Windows, VMS, Unix, Cygwin), or <a class="reference external" href="https://www.scipy.org/install.html">Python</a>. Also
+included are help files, examples, and files containing raw
+experimental data. The codes include single degree of freedom
+response, response spectrum, finite elements, numerical integration,
+modal analysis and phase plane analysis. It was originally designed for use with
+the text “Engineering Vibration” by <a class="reference external" href="http://www.engin.umich.edu/college/about/people/profiles/f-to-j/daniel-inman">Prof. Daniel J. Inman</a> (<a class="reference external" href="http://www.prenhall.com">Prentice
+Hall</a>) but has expanded since then.</p>
+<p>I highly recommend use of
+<a class="reference external" href="http://www.octave.org">Octave</a> or <a class="reference external" href="https://www.scipy.org/install.html">Python</a> if possible, as they are free. If you know <a class="reference external" href="http://www.mathworks.com/">Matlab</a>, you already
+know most of <a class="reference external" href="http://www.octave.org">Octave</a>. Most students will hardly know the difference,
+except that it’s free! The <em>Octavized</em>
+toolbox can be found <a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox">here</a>, but is more easily installed using the <a class="reference internal" href="octave.html#ovinstall"><span class="std std-ref">Octave</span></a>. Further, the licensing is
+less restrictive (no charge for professional use!). The entire archive
+can be <a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip">downloaded as a zip file</a>. Please
+refer to the <a class="reference external" href="http://www.octave.org">Octave web site</a> for details on obtaining and installing
+<a class="reference external" href="http://www.octave.org">Octave</a>.</p>
+<p><a class="reference external" href="https://www.scipy.org/install.html">Python</a> is not much different in style and capability, especially when using <a class="reference external" href="http://pythonhosted.org/spyder/">Spyder</a>.  It’s a much more capable language for general computing and is becoming the de facto introductory programming language in engineering and computer science and is <a class="reference external" href="http://www.codingdojo.com/blog/9-most-in-demand-programming-languages-of-2017/">one of the most in-demand languages</a>. That means learning not only develops your computational skills, but also develops your broader programming toolbox. The <a class="reference external" href="http://vibrationtoolbox.github.io/vibration_toolbox/">Python version</a> is also the most quickly developing version of the Vibration Toolbox.</p>
+<p>If you are new to vibration, you can learn about what vibration is and why it’s important at the American Institute of Aeronautics and Astronautics Structural Dynamics Technical Committee <a class="reference external" href="www.exploringstructuraldynamics.org">Exploring Structural Dynamics website</a>.</p>
+</div>
+<div class="section" id="download-and-installation">
 <h1>Download and Installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="the-engineering-vibration-toolbox-for-python">
-<h2><a class="reference external" href="http://vibrationtoolbox.github.io/vibration_toolbox/">The Engineering Vibration Toolbox for Python</a><a class="headerlink" href="#the-engineering-vibration-toolbox-for-python" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://mybinder.org/v2/gh/vibrationtoolbox/vibration_toolbox/binder">Try it online now!</a></p>
-<p>Installing the Engineering Vibration Toolbox on Python is as easy as using  <cite>pip</cite>. The easy way to install is to simply type</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">vibration_toolbox</span>
-</pre></div>
-</div>
-<p>Please see the <a class="reference external" href="http://vibrationtoolbox.github.io/vibration_toolbox/">python manual</a> for more details.</p>
-</div>
-<div class="section" id="the-engineering-vibration-toolbox-for-matlab">
-<h2>The Engineering Vibration Toolbox for <a class="reference external" href="http://www.mathworks.com">Matlab</a><a class="headerlink" href="#the-engineering-vibration-toolbox-for-matlab" title="Permalink to this headline">¶</a></h2>
-<p>The Engineering Vibration Toolbox can be installed by downloading
-<a class="reference external" href="https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m">vtbud.m</a> and executing it from within <a class="reference external" href="http://www.mathworks.com">Matlab</a>. Executing it after installation
-later updates or removes the toolbox per user selection.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">You will get an error if <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code> is not in your path.
-Installation of the Vibration Toolbox via the easy method may be broken if you have multiple instances of vtoolbox files installed. If you duplicate or otherwise modify the files, please rename them and move them outside the toolbox folder. If that happens, open <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code> in the <a class="reference external" href="http://www.mathworks.com">Matlab</a> editor and press the F5 key.</p>
-</div>
-<p>This will download <code class="docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code>, expand it in the desired location, and add the path to it to your default <a class="reference external" href="http://www.mathworks.com">Matlab</a> path.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">After installation has completed you must delete the <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code> file that you saved. The location is listed in your <a class="reference external" href="http://www.mathworks.com">Matlab</a> console.</p>
-</div>
-<p>Alternatively, copy and
-paste this into your <a class="reference external" href="http://www.mathworks.com">Matlab</a> command console:</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span>»  <span class="n">urlwrite</span><span class="p">(</span><span class="s">&#39;https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m&#39;</span><span class="p">,</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">);</span><span class="n">vtbud</span><span class="p">;</span><span class="n">delete</span> <span class="n">vtbud</span><span class="p">.</span><span class="n">m</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>and press RETURN.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">If your current working directory is not writable (you don’t own it in the sense of computer security), this line will fail. In that case you need to use the <a class="reference external" href="http://www.mathworks.com">Matlab</a> <a class="reference external" href="https://www.mathworks.com/help/matlab/ref/cd.html">cd command</a> to change to a different directory or manually download <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code> before you run this line.</p>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Do not store any data or personal files inside the vtoolbox directory. They may be deleted or overwritten.</p>
-</div>
-<p>The current revision status of the <a class="reference external" href="https://vibrationtoolbox.github.io">Engineering Vibration Toolbox</a> for
-<a class="reference external" href="http://www.mathworks.com">Matlab</a> can be viewed in the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox">github repository</a> or more easily in the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt">vtbud.txt</a> file on this website.</p>
-<div class="section" id="troubleshooting">
-<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h3>
-<p>A list of updates since 1/1/98
-can be obtained for your current version by typing <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">vtbud</span></code> in
-Matlab. That can be compared to the <a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt">most up-to-date release</a>.</p>
-<p>They will load/run on all platforms supported by Matlab. The binary files are all <code class="docutils literal notranslate"><span class="pre">.mat</span></code> files, and the different extensions represent different parts of a project group. To load
-them type:</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span>» <span class="n">load</span> <span class="n">filename</span> <span class="o">-</span><span class="n">mat</span>
-</pre></div>
-</div>
-<p>where » is the Matlab prompt. <a class="footnote-reference" href="#id2" id="id1">[1]</a> The
-filename must include the extension unless it is <code class="docutils literal notranslate"><span class="pre">.mat</span></code>.</p>
-<p>If you can’t execute any of the <code class="docutils literal notranslate"><span class="pre">.m</span></code> files (try for
-example typing <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> from the Matlab prompt), they
-are either not in the Matlab path, or did not get
-transferred in the correct format (unlikely these days). Use the <code class="code docutils literal notranslate"><span class="pre">cd</span></code> command (like DOS) from
-within Matlab to move to the <code class="docutils literal notranslate"><span class="pre">vtoolbox</span></code> directory. If
-you can see the files using <code class="code docutils literal notranslate"><span class="pre">dir</span></code>, and still cannot execute them, then try
-transferring the text files again, being sure that they are transferred in
-ASCII (text) format.</p>
-</div>
-<div class="section" id="removing-the-engineering-vibration-toolbox">
-<h3>Removing the Engineering Vibration Toolbox:<a class="headerlink" href="#removing-the-engineering-vibration-toolbox" title="Permalink to this headline">¶</a></h3>
-<p>Type <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> from the Matlab prompt.</p>
-</div>
-</div>
-<div class="section" id="the-engineering-vibration-toolbox-for-octave">
-<span id="ovinstall"></span><h2>The Engineering Vibration Toolbox for <a class="reference external" href="http://www.octave.org/">Octave</a><a class="headerlink" href="#the-engineering-vibration-toolbox-for-octave" title="Permalink to this headline">¶</a></h2>
-<p>Please read the <a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst">Readme.rst</a>
-file for information not covered elsewhere.</p>
-<div class="section" id="installing-octave">
-<h3>Installing Octave<a class="headerlink" href="#installing-octave" title="Permalink to this headline">¶</a></h3>
-<p>Just like Python or Matlab, there are two steps. First, install Octave, then install the Engineering Vibration Toolbox.</p>
-<div class="section" id="installing-octave-on-windows">
-<h4>Installing Octave on Windows<a class="headerlink" href="#installing-octave-on-windows" title="Permalink to this headline">¶</a></h4>
-<p>The availability of a simple <a class="reference external" href="https://www.gnu.org/software/octave/download.html">Octave installer for Windows</a> has been
-sporadic. At the moment (11-August-2018) there is one available at the link in the preceding sentence. I do
-recommend that path when available. When it’s not, <a class="reference external" href="https://www.cygwin.com/">Cygwin</a> is a reliable, if more difficult, alternative.</p>
-<p>In order to install Octave via Cygwin (<strong>Not your easiest method!</strong>):</p>
-<ol class="arabic simple">
-<li>Download and install <a class="reference external" href="https://www.cygwin.com/">Cygwin</a>.</li>
-<li>You may have to run setup multiple times to install the parts you
-need. Install, at minimum:<ol class="loweralpha">
-<li><code class="docutils literal notranslate"><span class="pre">Octave</span></code> (Math section- octave: GNU Octave language…)</li>
-<li><code class="docutils literal notranslate"><span class="pre">xinit</span></code> (X11 section)</li>
-<li><code class="docutils literal notranslate"><span class="pre">unzip</span></code></li>
-</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matlab.html">Matlab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matlab.html#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matlab.html#removing-the-engineering-vibration-toolbox">Removing the Engineering Vibration Toolbox:</a></li>
+</ul>
 </li>
-<li>Go to the Windows Menu. In <code class="docutils literal notranslate"><span class="pre">Cygwin-X</span></code> run <code class="docutils literal notranslate"><span class="pre">XWin</span> <span class="pre">Server</span></code></li>
-<li>A green X should appear on the dock. You should be able to bring up
-a menu to launch <code class="docutils literal notranslate"><span class="pre">Octave</span></code></li>
-</ol>
-</div>
-<div class="section" id="installing-octave-on-mac">
-<h4>Installing Octave on Mac<a class="headerlink" href="#installing-octave-on-mac" title="Permalink to this headline">¶</a></h4>
-<p>Installing Octave on a Mac will take multiple steps. Please see <a class="reference external" href="https://wiki.octave.org/Octave_for_macOS">Octave for MacOS</a>. I personally use the <a class="reference external" href="macports.org">MacPorts method</a></p>
-</div>
-<div class="section" id="installing-octave-on-linux">
-<h4>Installing Octave on Linux<a class="headerlink" href="#installing-octave-on-linux" title="Permalink to this headline">¶</a></h4>
-<p>Octave is available as a package install on most Linux distributions.</p>
-</div>
-<div class="section" id="summary">
-<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h4>
-<p>If you can’t get it to work on Mac or Windows, installing on Ubuntu is easy. So, you can always use <a class="reference external" href="http://www.virtualbox.org">VirtualBox</a> and run it in a virtual machine (for free). I do for my testing, so indeed it works just fine.</p>
+<li class="toctree-l1"><a class="reference internal" href="octave.html">Octave</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="octave.html#installing-octave">Installing Octave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="octave.html#installing-updating-and-removing-the-toolbox">Installing, Updating, and Removing The Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="octave.html#printing-plots">Printing plots</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
-<div class="section" id="installing-updating-and-removing-the-toolbox">
-<h3>Installing, Updating, and Removing The Toolbox<a class="headerlink" href="#installing-updating-and-removing-the-toolbox" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="windows-installation">
-<h4>Windows Installation<a class="headerlink" href="#windows-installation" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip">Click on this</a>
-to download the vibration toolbox to your Downloads folder.</p>
-<p>Copy and paste this into your Octave window</p>
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="nb">system</span><span class="p">(</span><span class="s">&#39;curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m&gt;vtbud.m&#39;</span><span class="p">)</span>
-      <span class="n">vtbud</span>
-      <span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You must <code class="docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">load</span> <span class="pre">vtoolbox</span></code> each time you run Octave if you do not put this command in you <code class="docutils literal notranslate"><span class="pre">~/.octaverc</span></code> file. If editing of this doesn’t happen automatically, and you want this behavior, type <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> at you Octave prompt to edit it yourself.</p>
-</div>
-</div>
-<div class="section" id="linux-and-mac-installation">
-<h4>Linux and Mac Installation<a class="headerlink" href="#linux-and-mac-installation" title="Permalink to this headline">¶</a></h4>
-<p>Linux and MacOS are very similar underneath, so instructions apply equally.</p>
-<ol class="arabic simple">
-<li>Run <a class="reference external" href="http://www.octave.org/">Octave</a>.</li>
-<li>Copy and paste this into <a class="reference external" href="http://www.octave.org/">Octave</a>.</li>
-</ol>
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
-<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">vtb</span>
-<span class="p">;</span>
-</pre></div>
-</div>
-<p>Alternatively, you can also download <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code> and run it to perform
-the install for you (copy and paste this at the Octave prompt)</p>
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="nb">system</span><span class="p">(</span><span class="s">&#39;curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m&gt;vtbud.m&#39;</span><span class="p">)</span>
-<span class="n">vtbud</span>
-<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><strong>Note</strong>: If you use the Download button on <a class="reference external" href="github.com">github</a>, you <strong>must</strong> rename
-the downloaded file to <code class="code docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code> and manually use
-<code class="code docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">install</span> <span class="pre">vtoolbox.zip</span></code> after renaming the downloaded <code class="docutils literal notranslate"><span class="pre">zip</span></code>
-file to <code class="docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You must <code class="docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">load</span> <span class="pre">vtoolbox</span></code> each time you run Octave if you do not put this command in you <code class="docutils literal notranslate"><span class="pre">~/.octaverc</span></code> file. If editing of this doesn’t happen automatically, and you want this behavior, type <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> at you Octave prompt to edit it yourself.</p>
-</div>
-</div>
-<div class="section" id="to-update">
-<h4>To update:<a class="headerlink" href="#to-update" title="Permalink to this headline">¶</a></h4>
-<p>To update, run <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> in <a class="reference external" href="http://www.octave.org/">Octave</a> if you have updated since Feb 23, 2016.</p>
-<p>Otherwise, run <a class="reference external" href="http://www.octave.org/">Octave</a> and paste the following to the prompt:</p>
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">uninstall</span> <span class="n">vtoolbox</span>
-<span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
-<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="p">;</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="to-remove">
-<h4>To remove:<a class="headerlink" href="#to-remove" title="Permalink to this headline">¶</a></h4>
-<p>Because it takes so little space (trivial compared to a small Word
-document), I would suggest simply deactivating it</p>
-<p>In <a class="reference external" href="http://www.octave.org/">Octave</a></p>
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">unload</span> <span class="n">vtoolbox</span>
-</pre></div>
-</div>
-<p>This will hide it but leave it available. You may also want to <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> to stop it from loading each time you run Octave.</p>
-<p>To remove it completely, in <a class="reference external" href="http://www.octave.org/">Octave</a></p>
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">uninstall</span> <span class="n">vtoolbox</span>
-<span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
-<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
-<span class="p">;</span>
-</pre></div>
-</div>
-<p>You may have to look around and make sure no files <code class="docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code>, <code class="docutils literal notranslate"><span class="pre">master.zip</span></code>, or similar exist.</p>
-<p><em>Why the semi-colons?</em> It’s my way of making sure you don’t leave the
-last command unexecuted.</p>
-</div>
-<div class="section" id="troubleshooting-installation">
-<h4>Troubleshooting installation:<a class="headerlink" href="#troubleshooting-installation" title="Permalink to this headline">¶</a></h4>
-<p><code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> was initially buggy and is still quite new. If <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code>
-isn’t working, please perform a clean install with the following</p>
-<p>The first delete is to make sure you aren’t able to run an old version
-of <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code>. The second is to make sure it is updated in the future.</p>
-</div>
-</div>
-<div class="section" id="printing-plots">
-<h3>Printing plots<a class="headerlink" href="#printing-plots" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="code docutils literal notranslate"><span class="pre">print</span></code> command can be used to generate graphics files for
-embedding into your favorite word processing program. Type <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">print</span></code>
-for details. By default the file used end up in the current directory
-which is likely your home directory. The command <code class="code docutils literal notranslate"><span class="pre">pwd</span></code> can be
-used to determine your current directory. On Windows using Cygwin,
-this might be a bit complex. The file is likely located in
-<code class="docutils literal notranslate"><span class="pre">C:\cygwin64\home\</span></code> <em>username</em> where <em>username</em> is your account
-name. Alternatively, <code class="docutils literal notranslate"><span class="pre">cygwin64</span></code> may be something else similar. I
-suggest finding this directory  with the Windows File Browser and
-pinning it to the Quick Access area (Windows 10) by dragging it there.</p>
+<div class="section" id="using-the-engineering-vibration-toolbox-matlab-and-octave">
+<h1>Using the Engineering Vibration Toolbox (Matlab and Octave)<a class="headerlink" href="#using-the-engineering-vibration-toolbox-matlab-and-octave" title="Permalink to this headline">¶</a></h1>
+<p>Typing <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">vtb#</span></code>, where <code class="docutils literal notranslate"><span class="pre">#</span></code> is a number, will provide a table of contents for the files
+related to chapter ‘?’. Typing <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">codename</span></code> will provide help on the
+particular code. Note  that the <code class="docutils literal notranslate"><span class="pre">filename</span></code> is <code class="docutils literal notranslate"><span class="pre">codename.m</span></code>.</p>
+<p>Engineering Vibration Toolbox commands can be run by typing them with
+the necessary arguments just as any other Octave/Matlab
+commands/functions. For instance, <code class="code docutils literal notranslate"><span class="pre">vtb1_1</span></code> can be run by typing
+<code class="code docutils literal notranslate"><span class="pre">vtb1_1(1,.1,1,1,0,10)</span></code>. Many functions have multiple forms of input.
+The help for each function shows this flexibility.</p>
 </div>
 <div class="section" id="acknowledgments">
-<h3>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h3>
+<h1>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h1>
 <p>Support for the Engineering Vibration Toolbox for Octave has come from a number of
 sources. First and foremost, Daniel J. Inman, who initially tasked
 me and Donald J. Leo to write version 3.0 of the software for his text
@@ -262,30 +110,11 @@ writing/coordinating/developing/supporting Octave. Please see the
 support its development.</p>
 </div>
 <div class="section" id="license">
-<h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
-<p>The Engineering Vibration Toolbox for Octave is licensed under <a class="reference external" href="http://www.gnu.org/copyleft/gpl.html">GPLv3</a>.
-For professional use with Matlab, users should
+<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h1>
+<p>The Engineering Vibration Toolbox for Octave and Python is licensed under <a class="reference external" href="http://www.gnu.org/copyleft/gpl.html">GPLv3</a>.
+For professional use on Matlab, users should
 contact the Engineering Vibration Toolbox author directly for
 licensing.</p>
-</div>
-</div>
-</div>
-<div class="section" id="using-the-engineering-vibration-toolbox">
-<h1>Using the Engineering Vibration Toolbox<a class="headerlink" href="#using-the-engineering-vibration-toolbox" title="Permalink to this headline">¶</a></h1>
-<p>Typing <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">vtb#</span></code>, where <code class="docutils literal notranslate"><span class="pre">#</span></code> is a number, will provide a table of contents for the files
-related to chapter ‘?’. Typing <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">codename</span></code> will provide help on the
-particular code. Note  that the <code class="docutils literal notranslate"><span class="pre">filename</span></code> is <code class="docutils literal notranslate"><span class="pre">codename.m</span></code>.</p>
-<p>Engineering Vibration Toolbox commands can be run by typing them with
-the necessary arguments just as any other Octave/Matlab
-commands/functions. For instance, <code class="code docutils literal notranslate"><span class="pre">vtb1_1</span></code> can be run by typing
-<code class="code docutils literal notranslate"><span class="pre">vtb1_1(1,.1,1,1,0,10)</span></code>. Many functions have multiple forms of input.
-The help for each function shows this flexibility.</p>
-</div>
-<div class="section" id="faculty-instructors-gtas">
-<h1>Faculty/Instructors/GTAs<a class="headerlink" href="#faculty-instructors-gtas" title="Permalink to this headline">¶</a></h1>
-<p>Please send comments and questions regarding the Engineering Vibration
-Toolbox by email to <a class="reference external" href="mailto:joseph&#46;c&#46;slater&#37;&#52;&#48;gmail&#46;com?subject=Vibration%20Toolbox">Joseph C<span>&#46;</span> Slater</a>. Please use the <a class="reference external" href="https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m">vtbud.m</a>
-function to check for updates (Type <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> at the Matlab prompt).</p>
 </div>
 <div class="section" id="donate-payment">
 <h1>Donate/Payment<a class="headerlink" href="#donate-payment" title="Permalink to this headline">¶</a></h1>
@@ -302,8 +131,8 @@ to owners of Engineering Vibration, Daniel J. Inman. Please contact
 <div class="section" id="disclaimer-and-other-stuff">
 <h1>Disclaimer and Other Stuff<a class="headerlink" href="#disclaimer-and-other-stuff" title="Permalink to this headline">¶</a></h1>
 <p>This site is provided to distribute updates to the
-Engineering Vibration Toolbox. <a class="reference external" href="mailto:joseph&#46;c&#46;slater&#37;&#52;&#48;gmail&#46;com?subject=Vibration%20Toolbox">Joseph C<span>&#46;</span> Slater</a> is the copyright holder of the Engineering Vibration
-Toolbox. Neither the author,
+Engineering Vibration Toolbox. <a class="reference external" href="mailto:joseph&#46;c&#46;slater&#37;&#52;&#48;gmail&#46;com?subject=Vibration%20Toolbox">Joseph C<span>&#46;</span> Slater</a> is the copyright holder of
+the Engineering Vibration Toolbox. Neither the author,
 Prentice Hall, nor Wright State University make any warranty
 with regard to merchantability or fitness for any given purpose with regard
 to the software. All rights are retained. No permission is given to anyone
@@ -318,20 +147,6 @@ use where the software is installed.</p>
 registered trademark of Apple Computer, Inc. PostScript is a registered
 trademark of Adobe Systems, Inc. Windows is a registered trademark of
 Microsoft Corp. Unix is a registered trademark of AT&amp;T.</p>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>If the prompt looks funny on this web page, set the <em>Character Encoding</em>
-(Firefox), <em>Font Encoding</em> (Safari), or <em>Encoding</em> to Unicode: UTF-8.</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[2]</td><td>This may not be necessary as compatibility with Matlab has been
-improving over the years.</td></tr>
-</tbody>
-</table>
 </div>
 
 
@@ -359,14 +174,16 @@ improving over the years.</td></tr>
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Download and Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#the-engineering-vibration-toolbox-for-python">The Engineering Vibration Toolbox for Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-engineering-vibration-toolbox-for-matlab">The Engineering Vibration Toolbox for Matlab</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-engineering-vibration-toolbox-for-octave">The Engineering Vibration Toolbox for Octave</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#download-and-installation">Download and Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matlab.html">Matlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="octave.html">Octave</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#using-the-engineering-vibration-toolbox">Using the Engineering Vibration Toolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#faculty-instructors-gtas">Faculty/Instructors/GTAs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#using-the-engineering-vibration-toolbox-matlab-and-octave">Using the Engineering Vibration Toolbox (Matlab and Octave)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#acknowledgments">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#license">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#donate-payment">Donate/Payment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#disclaimer-and-other-stuff">Disclaimer and Other Stuff</a></li>
 </ul>
@@ -399,7 +216,7 @@ improving over the years.</td></tr>
       &copy;2015, Joseph C. Slater.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
       |

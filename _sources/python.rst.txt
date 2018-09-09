@@ -1,0 +1,50 @@
+Python
+------
+
+`Try it online now!  <https://mybinder.org/v2/gh/vibrationtoolbox/vibration_toolbox/binder>`_
+
+Installing the Engineering Vibration Toolbox on `Python`_ is as easy as using  `pip`. The easy way to install is to simply type
+
+.. code-block:: python
+
+   pip install --user vibration_toolbox
+
+Please see the `python manual <http://vibrationtoolbox.github.io/vibration_toolbox/>`_ for more details.
+
+.. _Octave: http://www.octave.org/
+
+.. _`Octave Engineering Vibration Toolbox`: https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip
+
+.. _`Octave Engineering Vibration Toolbox distribution site`: https://github.com/vibrationtoolbox/ovtoolbox
+
+.. _Joseph C. Slater: mailto:joseph.c.slater@gmail.com?subject=Vibration%20Toolbox
+
+.. _`Engineering Vibration Toolbox`: https://vibrationtoolbox.github.io
+
+.. _Cygwin: https://www.cygwin.com/
+
+.. _MATLAB: http://www.mathworks.com
+
+.. _Matlab: http://www.mathworks.com
+
+.. _`vtbud.m`: https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m
+
+.. _`Octave Windows`: http://wiki.octave.org/Octave_for_Microsoft_Windows
+
+.. _GPLv3: http://www.gnu.org/copyleft/gpl.html
+
+.. _me: mailto:joseph.c.slater@gmail.com?subject=Vibration%20Toolbox
+
+.. _Ubuntu: http://www.ubuntu.com
+
+.. _Linux: http://www.linux.com
+
+.. _VirtualBox: http://www.virtualbox.org
+
+.. _The Engineering Vibration Toolbox for Python: http://vibrationtoolbox.github.io/vibration_toolbox/
+
+.. _`cd command`: https://www.mathworks.com/help/matlab/ref/cd.html
+
+.. |mlp| unicode:: U+00BB .. matlab prompt
+
+.. _Python: https://www.scipy.org/install.html

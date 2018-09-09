@@ -1,288 +1,61 @@
 
+
+Overview
+==========
+
+The Engineering Vibration Toolbox is a set of over 35 educational
+programs and associated files by `Joseph C.
+Slater <http://josephcslater.github.io>`__ (Python version with Raphael Timbó).
+It can be run on any platform supported by
+`Matlab <http://www.mathworks.com/>`__
+`Octave <http://www.octave.org>`__  (Mac, Windows, VMS, Unix, Cygwin), or `Python`_. Also
+included are help files, examples, and files containing raw
+experimental data. The codes include single degree of freedom
+response, response spectrum, finite elements, numerical integration,
+modal analysis and phase plane analysis. It was originally designed for use with
+the text "Engineering Vibration" by `Prof. Daniel J. Inman <http://www.engin.umich.edu/college/about/people/profiles/f-to-j/daniel-inman>`__ (`Prentice
+Hall <http://www.prenhall.com>`__) but has expanded since then.
+
+I highly recommend use of
+`Octave <http://www.octave.org>`__ or `Python`_ if possible, as they are free. If you know `Matlab <http://www.mathworks.com/>`__, you already
+know most of `Octave <http://www.octave.org>`__. Most students will hardly know the difference,
+except that it's free! The *Octavized*
+toolbox can be found `here <https://github.com/vibrationtoolbox/ovtoolbox>`__, but is more easily installed using the :ref:`ovinstall`. Further, the licensing is
+less restrictive (no charge for professional use!). The entire archive
+can be `downloaded as a zip file <https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip>`__. Please
+refer to the `Octave web site <http://www.octave.org>`__ for details on obtaining and installing
+`Octave <http://www.octave.org>`__.
+
+`Python`_ is not much different in style and capability, especially when using `Spyder <http://pythonhosted.org/spyder/>`__.  It's a much more capable language for general computing and is becoming the de facto introductory programming language in engineering and computer science and is `one of the most in-demand languages <http://www.codingdojo.com/blog/9-most-in-demand-programming-languages-of-2017/>`__. That means learning not only develops your computational skills, but also develops your broader programming toolbox. The `Python version <http://vibrationtoolbox.github.io/vibration_toolbox/>`_ is also the most quickly developing version of the Vibration Toolbox.
+
+If you are new to vibration, you can learn about what vibration is and why it's important at the American Institute of Aeronautics and Astronautics Structural Dynamics Technical Committee `Exploring Structural Dynamics website <www.exploringstructuraldynamics.org>`__.
+
+
 Download and Installation
 ==============================
 
-`The Engineering Vibration Toolbox for Python`_
------------------------------------------------
-
-`Try it online now!  <https://mybinder.org/v2/gh/vibrationtoolbox/vibration_toolbox/binder>`_
-
-Installing the Engineering Vibration Toolbox on Python is as easy as using  `pip`. The easy way to install is to simply type
-
-.. code-block:: python
-
-   pip install --user vibration_toolbox
-
-Please see the `python manual <http://vibrationtoolbox.github.io/vibration_toolbox/>`_ for more details.
-
-
-The Engineering Vibration Toolbox for `Matlab`_
------------------------------------------------------------
-
-The Engineering Vibration Toolbox can be installed by downloading
-`vtbud.m`_ and executing it from within Matlab_. Executing it after installation
-later updates or removes the toolbox per user selection.
-
-.. warning::
-   You will get an error if ``vtbud.m`` is not in your path.
-   Installation of the Vibration Toolbox via the easy method may be broken if you have multiple instances of vtoolbox files installed. If you duplicate or otherwise modify the files, please rename them and move them outside the toolbox folder. If that happens, open ``vtbud.m`` in the Matlab_ editor and press the F5 key.
-
-This will download ``vtoolbox.zip``, expand it in the desired location, and add the path to it to your default Matlab_ path.
-
-.. note::
-   After installation has completed you must delete the ``vtbud.m`` file that you saved. The location is listed in your Matlab_ console.
-
-Alternatively, copy and
-paste this into your Matlab_ command console:
-
-.. code-block:: matlab
-
-   »  urlwrite('https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m','vtbud.m');vtbud;delete vtbud.m;
-
-and press RETURN.
-
-.. warning::
-   If your current working directory is not writable (you don't own it in the sense of computer security), this line will fail. In that case you need to use the Matlab_ `cd command`_ to change to a different directory or manually download ``vtbud.m`` before you run this line.
-
-.. warning::
-   Do not store any data or personal files inside the vtoolbox directory. They may be deleted or overwritten.
-
-The current revision status of the `Engineering Vibration Toolbox`_ for
-Matlab_ can be viewed in the `github repository <https://github.com/vibrationtoolbox/vtoolbox>`_ or more easily in the `vtbud.txt <https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt>`_ file on this website.
-
-Troubleshooting
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A list of updates since 1/1/98
-can be obtained for your current version by typing :code:`help vtbud` in
-Matlab. That can be compared to the `most up-to-date release <https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt>`_.
-
-They will load/run on all platforms supported by Matlab. The binary files are all ``.mat`` files, and the different extensions represent different parts of a project group. To load
-them type:
-
-.. code-block:: matlab
-
-   » load filename -mat
-
-where » is the Matlab prompt. [#]_ The
-filename must include the extension unless it is ``.mat``.
-
-If you can't execute any of the ``.m`` files (try for
-example typing :code:`vtbud` from the Matlab prompt), they
-are either not in the Matlab path, or did not get
-transferred in the correct format (unlikely these days). Use the :code:`cd` command (like DOS) from
-within Matlab to move to the ``vtoolbox`` directory. If
-you can see the files using :code:`dir`, and still cannot execute them, then try
-transferring the text files again, being sure that they are transferred in
-ASCII (text) format.
-
-Removing the Engineering Vibration Toolbox:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Type :code:`vtbud` from the Matlab prompt.
-
-.. _ovinstall:
-
-The Engineering Vibration Toolbox for `Octave`_
--------------------------------------------------------------
-Please read the `Readme.rst
-<https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst>`_
-file for information not covered elsewhere.
-
-
-Installing Octave
-~~~~~~~~~~~~~~~~~
-
-Just like Python or Matlab, there are two steps. First, install Octave, then install the Engineering Vibration Toolbox.
-
-Installing Octave on Windows
-****************************
-
-The availability of a simple `Octave installer for Windows <https://www.gnu.org/software/octave/download.html>`_ has been
-sporadic. At the moment (11-August-2018) there is one available at the link in the preceding sentence. I do
-recommend that path when available. When it's not, `Cygwin`_ is a reliable, if more difficult, alternative.
-
-
-In order to install Octave via Cygwin (**Not your easiest method!**):
-
-1. Download and install `Cygwin`_.
-
-2. You may have to run setup multiple times to install the parts you
-   need. Install, at minimum:
-
-   a. ``Octave`` (Math section- octave: GNU Octave language...)
-
-   b. ``xinit`` (X11 section)
-
-   c. ``unzip``
-
-3. Go to the Windows Menu. In ``Cygwin-X`` run ``XWin Server``
-
-4. A green X should appear on the dock. You should be able to bring up
-   a menu to launch ``Octave``
-
-Installing Octave on Mac
-************************
-
-Installing Octave on a Mac will take multiple steps. Please see `Octave for MacOS <https://wiki.octave.org/Octave_for_macOS>`_. I personally use the `MacPorts method <macports.org>`_
-
-Installing Octave on Linux
-**************************
-
-Octave is available as a package install on most Linux distributions.
-
-Summary
-*******
-
-If you can't get it to work on Mac or Windows, installing on Ubuntu is easy. So, you can always use `VirtualBox`_ and run it in a virtual machine (for free). I do for my testing, so indeed it works just fine.
-
-
-Installing, Updating, and Removing The Toolbox
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-Windows Installation
-********************
-
-`Click on this
-<https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip>`_
-to download the vibration toolbox to your Downloads folder.
-
-Copy and paste this into your Octave window
-
-.. code-block:: octave
-
-	  system('curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m>vtbud.m')
-		vtbud
-		delete('vtbud.m')
-
-.. note::
-
-   You must ``pkg load vtoolbox`` each time you run Octave if you do not put this command in you ``~/.octaverc`` file. If editing of this doesn't happen automatically, and you want this behavior, type ``edit('~/.octaverc')`` at you Octave prompt to edit it yourself.
-
-Linux and Mac Installation
-**************************
-
-Linux and MacOS are very similar underneath, so instructions apply equally.
-
-1. Run `Octave`_.
-
-2. Copy and paste this into `Octave`_.
-
-.. code-block:: octave
-
-   [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
-   delete('vtoolbox.zip')
-   vtb
-   ;
-
-Alternatively, you can also download ``vtbud.m`` and run it to perform
-the install for you (copy and paste this at the Octave prompt)
-
-.. code-block:: octave
-
-		system('curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m>vtbud.m')
-		vtbud
-		delete('vtbud.m')
-
-**Note**: If you use the Download button on `github <github.com>`_, you **must** rename
-the downloaded file to :code:`vtoolbox.zip` and manually use
-:code:`pkg install vtoolbox.zip` after renaming the downloaded ``zip``
-file to ``vtoolbox.zip``.
-
-.. note::
-
-   You must ``pkg load vtoolbox`` each time you run Octave if you do not put this command in you ``~/.octaverc`` file. If editing of this doesn't happen automatically, and you want this behavior, type ``edit('~/.octaverc')`` at you Octave prompt to edit it yourself.
-
-
-To update:
-**********
-To update, run :code:`vtbud` in `Octave`_ if you have updated since Feb 23, 2016.
-
-Otherwise, run `Octave`_ and paste the following to the prompt:
-
-.. code-block:: octave
-
-   pkg uninstall vtoolbox
-   [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
-   delete('vtoolbox.zip')
-   ;
-
-
-To remove:
-**********
-
-Because it takes so little space (trivial compared to a small Word
-document), I would suggest simply deactivating it
-
-
-In `Octave`_
-
-.. code-block:: octave
-
-   pkg unload vtoolbox
-
-This will hide it but leave it available. You may also want to ``edit('~/.octaverc')`` to stop it from loading each time you run Octave.
-
-To remove it completely, in `Octave`_
-
-.. code-block:: octave
-
-   pkg uninstall vtoolbox
-   [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
-   delete('vtoolbox.zip')
-   ;
-
-You may have to look around and make sure no files ``vtoolbox.zip``, ``master.zip``, or similar exist.
-
-*Why the semi-colons?* It's my way of making sure you don't leave the
-last command unexecuted.
-
-Troubleshooting installation:
-***********************************
-
-:code:`vtbud` was initially buggy and is still quite new. If :code:`vtbud`
-isn't working, please perform a clean install with the following
-
-.. code-block::octave
-
-   pkg uninstall vtoolbox
-   delete('vtbud.m')
-   system('curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m>vtbud.m')
-   vtbud
-   delete('vtbud.m')
-
-The first delete is to make sure you aren't able to run an old version
-of ``vtbud.m``. The second is to make sure it is updated in the future.
-
-Printing plots
-~~~~~~~~~~~~~~~~
-
-..
-    To print a plot, the easiest way may be to type :code:`print` from the Octave
-    console.
-
-..
-    This *may* bring up dialog boxes that enable you to send the
-    current plot to your current Windows printer. SO
-
-The :code:`print` command can be used to generate graphics files for
-embedding into your favorite word processing program. Type :code:`help print`
-for details. By default the file used end up in the current directory
-which is likely your home directory. The command :code:`pwd` can be
-used to determine your current directory. On Windows using Cygwin,
-this might be a bit complex. The file is likely located in
-``C:\cygwin64\home\`` *username* where *username* is your account
-name. Alternatively, ``cygwin64`` may be something else similar. I
-suggest finding this directory  with the Windows File Browser and
-pinning it to the Quick Access area (Windows 10) by dragging it there.
-
-
+.. toctree::
+   :maxdepth: 2
+
+   python
+   matlab
+   octave
+
+Using the Engineering Vibration Toolbox (Matlab and Octave)
+===========================================================
+
+Typing :code:`help vtb#`, where ``#`` is a number, will provide a table of contents for the files
+related to chapter '?'. Typing :code:`help codename` will provide help on the
+particular code. Note  that the ``filename`` is ``codename.m``.
+
+Engineering Vibration Toolbox commands can be run by typing them with
+the necessary arguments just as any other Octave/Matlab
+commands/functions. For instance, :code:`vtb1_1` can be run by typing
+:code:`vtb1_1(1,.1,1,1,0,10)`. Many functions have multiple forms of input.
+The help for each function shows this flexibility.
 
 Acknowledgments
-~~~~~~~~~~~~~~~~~
+===============
 
 Support for the Engineering Vibration Toolbox for Octave has come from a number of
 sources. First and foremost, Daniel J. Inman, who initially tasked
@@ -301,32 +74,13 @@ Octave_ website for more information on Octave and how you can
 support its development.
 
 License
-~~~~~~~~~
+=======
 
-The Engineering Vibration Toolbox for Octave is licensed under GPLv3_.
-For professional use with Matlab, users should
+The Engineering Vibration Toolbox for Octave and Python is licensed under GPLv3_.
+For professional use on Matlab, users should
 contact the Engineering Vibration Toolbox author directly for
 licensing.
 
-Using the Engineering Vibration Toolbox
-=====================================================
-
-Typing :code:`help vtb#`, where ``#`` is a number, will provide a table of contents for the files
-related to chapter '?'. Typing :code:`help codename` will provide help on the
-particular code. Note  that the ``filename`` is ``codename.m``.
-
-Engineering Vibration Toolbox commands can be run by typing them with
-the necessary arguments just as any other Octave/Matlab
-commands/functions. For instance, :code:`vtb1_1` can be run by typing
-:code:`vtb1_1(1,.1,1,1,0,10)`. Many functions have multiple forms of input.
-The help for each function shows this flexibility.
-
-
-Faculty/Instructors/GTAs
-=========================
-Please send comments and questions regarding the Engineering Vibration
-Toolbox by email to `Joseph C. Slater`_. Please use the `vtbud.m`_
-function to check for updates (Type :code:`vtbud` at the Matlab prompt).
 
 Donate/Payment
 ===============
@@ -345,12 +99,11 @@ to owners of Engineering Vibration, Daniel J. Inman. Please contact
          </form></object>
 
 
-
 Disclaimer and Other Stuff
 ==============================
 This site is provided to distribute updates to the
-Engineering Vibration Toolbox. `Joseph C. Slater`_ is the copyright holder of the Engineering Vibration
-Toolbox. Neither the author,
+Engineering Vibration Toolbox. `Joseph C. Slater`_ is the copyright holder of
+the Engineering Vibration Toolbox. Neither the author,
 Prentice Hall, nor Wright State University make any warranty
 with regard to merchantability or fitness for any given purpose with regard
 to the software. All rights are retained. No permission is given to anyone
@@ -367,12 +120,6 @@ Matlab is a registered trademark of the MathWorks, Inc. Mac(intosh) is a
 registered trademark of Apple Computer, Inc. PostScript is a registered
 trademark of Adobe Systems, Inc. Windows is a registered trademark of
 Microsoft Corp. Unix is a registered trademark of AT&T.
-
-.. [#] If the prompt looks funny on this web page, set the *Character Encoding*
-       (Firefox), *Font Encoding* (Safari), or *Encoding* to Unicode: UTF-8.
-
-.. [#] This may not be necessary as compatibility with Matlab has been
-       improving over the years.
 
 .. _Octave: http://www.octave.org/
 
@@ -409,3 +156,6 @@ Microsoft Corp. Unix is a registered trademark of AT&T.
 .. _`cd command`: https://www.mathworks.com/help/matlab/ref/cd.html
 
 .. |mlp| unicode:: U+00BB .. matlab prompt
+
+
+.. _Python: https://www.scipy.org/install.html

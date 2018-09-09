@@ -1,0 +1,105 @@
+Matlab
+-----------------------------------------------------------
+
+The Engineering Vibration Toolbox can be installed by downloading
+`vtbud.m`_ and executing it from within Matlab_. Executing it after installation
+later updates or removes the toolbox per user selection.
+
+.. warning::
+   You will get an error if ``vtbud.m`` is not in your path.
+   Installation of the Vibration Toolbox via the easy method may be broken if you have multiple instances of vtoolbox files installed. If you duplicate or otherwise modify the files, please rename them and move them outside the toolbox folder. If that happens, open ``vtbud.m`` in the Matlab_ editor and press the F5 key.
+
+This will download ``vtoolbox.zip``, expand it in the desired location, and add the path to it to your default Matlab_ path.
+
+.. note::
+   After installation has completed you must delete the ``vtbud.m`` file that you saved. The location is listed in your Matlab_ console.
+
+Alternatively, copy and
+paste this into your Matlab_ command console:
+
+.. code-block:: matlab
+
+   »  urlwrite('https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m','vtbud.m');vtbud;delete vtbud.m;
+
+and press RETURN.
+
+.. warning::
+   If your current working directory is not writable (you don't own it in the sense of computer security), this line will fail. In that case you need to use the Matlab_ `cd command`_ to change to a different directory or manually download ``vtbud.m`` before you run this line.
+
+.. warning::
+   Do not store any data or personal files inside the vtoolbox directory. They may be deleted or overwritten.
+
+The current revision status of the `Engineering Vibration Toolbox`_ for
+Matlab_ can be viewed in the `github repository <https://github.com/vibrationtoolbox/vtoolbox>`_ or more easily in the `vtbud.txt <https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt>`_ file on this website.
+
+Troubleshooting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A list of updates since 1/1/98
+can be obtained for your current version by typing :code:`help vtbud` in
+Matlab. That can be compared to the `most up-to-date release <https://github.com/vibrationtoolbox/vtoolbox/blob/master/vtbud.txt>`_.
+
+They will load/run on all platforms supported by Matlab. The binary files are all ``.mat`` files, and the different extensions represent different parts of a project group. To load
+them type:
+
+.. code-block:: matlab
+
+   » load filename -mat
+
+where » is the Matlab prompt. [#]_ The
+filename must include the extension unless it is ``.mat``.
+
+If you can't execute any of the ``.m`` files (try for
+example typing :code:`vtbud` from the Matlab prompt), they
+are either not in the Matlab path, or did not get
+transferred in the correct format (unlikely these days). Use the :code:`cd` command (like DOS) from
+within Matlab to move to the ``vtoolbox`` directory. If
+you can see the files using :code:`dir`, and still cannot execute them, then try
+transferring the text files again, being sure that they are transferred in
+ASCII (text) format.
+
+Removing the Engineering Vibration Toolbox:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Type :code:`vtbud` from the Matlab prompt.
+
+.. [#] If the prompt looks funny on this web page, set the *Character Encoding*
+       (Firefox), *Font Encoding* (Safari), or *Encoding* to Unicode: UTF-8.
+
+.. [#] This may not be necessary as compatibility with Matlab has been
+       improving over the years.
+
+.. _Octave: http://www.octave.org/
+
+.. _`Octave Engineering Vibration Toolbox`: https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip
+
+.. _`Octave Engineering Vibration Toolbox distribution site`: https://github.com/vibrationtoolbox/ovtoolbox
+
+.. _Joseph C. Slater: mailto:joseph.c.slater@gmail.com?subject=Vibration%20Toolbox
+
+.. _`Engineering Vibration Toolbox`: https://vibrationtoolbox.github.io
+
+.. _Cygwin: https://www.cygwin.com/
+
+.. _MATLAB: http://www.mathworks.com
+
+.. _Matlab: http://www.mathworks.com
+
+.. _`vtbud.m`: https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m
+
+.. _`Octave Windows`: http://wiki.octave.org/Octave_for_Microsoft_Windows
+
+.. _GPLv3: http://www.gnu.org/copyleft/gpl.html
+
+.. _me: mailto:joseph.c.slater@gmail.com?subject=Vibration%20Toolbox
+
+.. _Ubuntu: http://www.ubuntu.com
+
+.. _Linux: http://www.linux.com
+
+.. _VirtualBox: http://www.virtualbox.org
+
+.. _The Engineering Vibration Toolbox for Python: http://vibrationtoolbox.github.io/vibration_toolbox/
+
+.. _`cd command`: https://www.mathworks.com/help/matlab/ref/cd.html
+
+.. |mlp| unicode:: U+00BB .. matlab prompt

@@ -1,0 +1,275 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Octave &#8212; The Engineering Vibration Toolbox</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Matlab" href="matlab.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+    <link rel="apple-touch-icon" href="_static/vtb5_6.png" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="octave">
+<span id="ovinstall"></span><h1><a class="reference external" href="http://www.octave.org/">Octave</a><a class="headerlink" href="#octave" title="Permalink to this headline">¶</a></h1>
+<p>Please read the <a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/blob/master/Readme.rst">Readme.rst</a>
+file for information not covered elsewhere.</p>
+<div class="section" id="installing-octave">
+<h2>Installing Octave<a class="headerlink" href="#installing-octave" title="Permalink to this headline">¶</a></h2>
+<p>Just like Python or Matlab, there are two steps. First, install Octave, then install the Engineering Vibration Toolbox.</p>
+<div class="section" id="installing-octave-on-windows">
+<h3>Installing Octave on Windows<a class="headerlink" href="#installing-octave-on-windows" title="Permalink to this headline">¶</a></h3>
+<p>The availability of a simple <a class="reference external" href="https://www.gnu.org/software/octave/download.html">Octave installer for Windows</a> has been
+sporadic. At the moment (11-August-2018) there is an installer available at the link in the preceding sentence. I do
+recommend that path when available. When it’s not, <a class="reference external" href="https://www.cygwin.com/">Cygwin</a> is a reliable, if more difficult, alternative.</p>
+<p>In order to install Octave via Cygwin (<strong>Not your easiest method!</strong>):</p>
+<ol class="arabic simple">
+<li>Download and install <a class="reference external" href="https://www.cygwin.com/">Cygwin</a>.</li>
+<li>You may have to run setup multiple times to install the parts you
+need. Install, at minimum:<ol class="loweralpha">
+<li><code class="docutils literal notranslate"><span class="pre">Octave</span></code> (Math section- octave: GNU Octave language…)</li>
+<li><code class="docutils literal notranslate"><span class="pre">xinit</span></code> (X11 section)</li>
+<li><code class="docutils literal notranslate"><span class="pre">unzip</span></code></li>
+</ol>
+</li>
+<li>Go to the Windows Menu. In <code class="docutils literal notranslate"><span class="pre">Cygwin-X</span></code> run <code class="docutils literal notranslate"><span class="pre">XWin</span> <span class="pre">Server</span></code></li>
+<li>A green X should appear on the dock. You should be able to bring up
+a menu to launch <code class="docutils literal notranslate"><span class="pre">Octave</span></code></li>
+</ol>
+</div>
+<div class="section" id="installing-octave-on-mac">
+<h3>Installing Octave on Mac<a class="headerlink" href="#installing-octave-on-mac" title="Permalink to this headline">¶</a></h3>
+<p>Installing Octave on a Mac will take multiple steps. Please see <a class="reference external" href="https://wiki.octave.org/Octave_for_macOS">Octave for MacOS</a>. I personally use the <a class="reference external" href="macports.org">MacPorts method</a></p>
+</div>
+<div class="section" id="installing-octave-on-linux">
+<h3>Installing Octave on Linux<a class="headerlink" href="#installing-octave-on-linux" title="Permalink to this headline">¶</a></h3>
+<p>Octave is available as a package install on most Linux distributions.</p>
+</div>
+<div class="section" id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h3>
+<p>If you can’t get it to work on Mac or Windows, installing on Ubuntu is easy. So, you can always use <a class="reference external" href="http://www.virtualbox.org">VirtualBox</a> and run it in a virtual machine (for free). I do for my testing, so indeed it works just fine.</p>
+</div>
+</div>
+<div class="section" id="installing-updating-and-removing-the-toolbox">
+<h2>Installing, Updating, and Removing The Toolbox<a class="headerlink" href="#installing-updating-and-removing-the-toolbox" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="windows-installation">
+<h3>Windows Installation<a class="headerlink" href="#windows-installation" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip">Click on this</a>
+to download the vibration toolbox to your Downloads folder.</p>
+<p>Copy and paste this into your Octave window</p>
+<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="nb">system</span><span class="p">(</span><span class="s">&#39;curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m&gt;vtbud.m&#39;</span><span class="p">)</span>
+      <span class="n">vtbud</span>
+      <span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You must <code class="docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">load</span> <span class="pre">vtoolbox</span></code> each time you run Octave if you do not put this command in you <code class="docutils literal notranslate"><span class="pre">~/.octaverc</span></code> file. If editing of this doesn’t happen automatically, and you want this behavior, type <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> at you Octave prompt to edit it yourself.</p>
+</div>
+</div>
+<div class="section" id="linux-and-mac-installation">
+<h3>Linux and Mac Installation<a class="headerlink" href="#linux-and-mac-installation" title="Permalink to this headline">¶</a></h3>
+<p>Linux and MacOS are very similar underneath, so instructions apply equally.</p>
+<ol class="arabic simple">
+<li>Run <a class="reference external" href="http://www.octave.org/">Octave</a>.</li>
+<li>Copy and paste this into <a class="reference external" href="http://www.octave.org/">Octave</a>.</li>
+</ol>
+<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
+<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
+<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
+<span class="n">pkg</span> <span class="nb">load</span> <span class="n">vtoolbox</span>
+<span class="n">vtbud</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<p>Alternatively, you can also download <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code> and run it to perform
+the install for you (copy and paste this at the Octave prompt)</p>
+<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="nb">system</span><span class="p">(</span><span class="s">&#39;curl -4 -L https://raw.githubusercontent.com/vibrationtoolbox/ovtoolbox/master/inst/vtbud.m&gt;vtbud.m&#39;</span><span class="p">)</span>
+<span class="n">vtbud</span>
+<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtbud.m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Note</strong>: If you use the Download button on <a class="reference external" href="github.com">github</a>, you <strong>must</strong> rename
+the downloaded file to <code class="code docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code> and manually use
+<code class="code docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">install</span> <span class="pre">vtoolbox.zip</span></code> after renaming the downloaded <code class="docutils literal notranslate"><span class="pre">zip</span></code>
+file to <code class="docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must <code class="docutils literal notranslate"><span class="pre">pkg</span> <span class="pre">load</span> <span class="pre">vtoolbox</span></code> each time you run Octave if you do not put this command in you <code class="docutils literal notranslate"><span class="pre">~/.octaverc</span></code> file. If editing of this doesn’t happen automatically, and you want this behavior, type <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> at you Octave prompt to edit it yourself.</p>
+</div>
+</div>
+<div class="section" id="to-update">
+<h3>To update:<a class="headerlink" href="#to-update" title="Permalink to this headline">¶</a></h3>
+<p>To update, run <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> in <a class="reference external" href="http://www.octave.org/">Octave</a> if you have updated since Feb 23, 2016.</p>
+<p>Otherwise, run <a class="reference external" href="http://www.octave.org/">Octave</a> and paste the following to the prompt:</p>
+<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">uninstall</span> <span class="n">vtoolbox</span>
+<span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
+<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
+<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-remove">
+<h3>To remove:<a class="headerlink" href="#to-remove" title="Permalink to this headline">¶</a></h3>
+<p>Because it takes so little space (trivial compared to a small Word
+document), I would suggest simply deactivating it</p>
+<p>In <a class="reference external" href="http://www.octave.org/">Octave</a></p>
+<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">unload</span> <span class="n">vtoolbox</span>
+</pre></div>
+</div>
+<p>This will hide it but leave it available. You may also want to <code class="docutils literal notranslate"><span class="pre">edit('~/.octaverc')</span></code> to stop it from loading each time you run Octave.</p>
+<p>To remove it completely, in <a class="reference external" href="http://www.octave.org/">Octave</a></p>
+<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">uninstall</span> <span class="n">vtoolbox</span>
+<span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">success</span><span class="p">,</span> <span class="n">message</span><span class="p">]=</span><span class="nb">urlwrite</span><span class="p">(</span><span class="s">&#39;https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip&#39;</span><span class="p">,</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
+<span class="n">pkg</span> <span class="n">install</span> <span class="n">vtoolbox</span><span class="p">.</span><span class="nb">zip</span>
+<span class="nb">delete</span><span class="p">(</span><span class="s">&#39;vtoolbox.zip&#39;</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<p>You may have to look around and make sure no files <code class="docutils literal notranslate"><span class="pre">vtoolbox.zip</span></code>, <code class="docutils literal notranslate"><span class="pre">master.zip</span></code>, or similar exist.</p>
+<p><em>Why the semi-colons?</em> It’s my way of making sure you don’t leave the
+last command unexecuted.</p>
+</div>
+<div class="section" id="troubleshooting-installation">
+<h3>Troubleshooting installation:<a class="headerlink" href="#troubleshooting-installation" title="Permalink to this headline">¶</a></h3>
+<p><code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> was initially buggy and is still quite new. If <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code>
+isn’t working, please perform a clean install with the following</p>
+<p>The first delete is to make sure you aren’t able to run an old version
+of <code class="docutils literal notranslate"><span class="pre">vtbud.m</span></code>. The second is to make sure it is updated in the future.</p>
+</div>
+</div>
+<div class="section" id="printing-plots">
+<h2>Printing plots<a class="headerlink" href="#printing-plots" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">print</span></code> command can be used to generate graphics files for
+embedding into your favorite word processing program. Type <code class="code docutils literal notranslate"><span class="pre">help</span> <span class="pre">print</span></code>
+for details. By default the file used end up in the current directory
+which is likely your home directory. The command <code class="code docutils literal notranslate"><span class="pre">pwd</span></code> can be
+used to determine your current directory. On Windows using Cygwin,
+this might be a bit complex. The file is likely located in
+<code class="docutils literal notranslate"><span class="pre">C:\cygwin64\home\</span></code> <em>username</em> where <em>username</em> is your account
+name. Alternatively, <code class="docutils literal notranslate"><span class="pre">cygwin64</span></code> may be something else similar. I
+suggest finding this directory  with the Windows File Browser and
+pinning it to the Quick Access area (Windows 10) by dragging it there.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/vtb5_6.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Educational programs for vibration education.</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="vtoolbox2.html">Download and Installation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matlab.html">Matlab</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Octave</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vtoolbox2.html#using-the-engineering-vibration-toolbox-matlab-and-octave">Using the Engineering Vibration Toolbox (Matlab and Octave</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vtoolbox2.html#acknowledgments">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vtoolbox2.html#license">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vtoolbox2.html#donate-payment">Donate/Payment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vtoolbox2.html#disclaimer-and-other-stuff">Disclaimer and Other Stuff</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/octave.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Joseph C. Slater.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/octave.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-62100376-2']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>
