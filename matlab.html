@@ -37,7 +37,14 @@
             
   <div class="section" id="matlab">
 <h1>Matlab<a class="headerlink" href="#matlab" title="Permalink to this headline">¶</a></h1>
-<p>The Engineering Vibration Toolbox can be installed by downloading
+<p><strong>Recommended install:</strong> download <code class="docutils literal notranslate"><span class="pre">vtoolbox.mltbx</span></code> from the
+<a class="reference external" href="https://github.com/vibrationtoolbox/vtoolbox/releases/latest">latest GitHub Release</a>
+and double-click it (or run <code class="docutils literal notranslate"><span class="pre">matlab.addons.install('vtoolbox.mltbx')</span></code>
+from the <a class="reference external" href="http://www.mathworks.com">Matlab</a> command console). <a class="reference external" href="http://www.mathworks.com">Matlab</a>'s Add-On Manager installs it
+and sets up the path automatically &#8212; no admin rights are needed, and it
+can be removed cleanly at any time from <strong>Home &gt; Add-Ons &gt; Manage
+Add-Ons</strong>.</p>
+<p>Legacy install: the Engineering Vibration Toolbox can also be installed by downloading
 <a class="reference external" href="https://raw.githubusercontent.com/vibrationtoolbox/vtoolbox/master/vtbud.m">vtbud.m</a> and executing it from within <a class="reference external" href="http://www.mathworks.com">Matlab</a>. Executing it after installation
 later updates or removes the toolbox per user selection.</p>
 <div class="admonition warning">
@@ -89,7 +96,8 @@ ASCII (text) format.</p>
 </div>
 <div class="section" id="removing-the-engineering-vibration-toolbox">
 <h2>Removing the Engineering Vibration Toolbox:<a class="headerlink" href="#removing-the-engineering-vibration-toolbox" title="Permalink to this headline">¶</a></h2>
-<p>Type <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> from the Matlab prompt.</p>
+<p>If you installed via <code class="docutils literal notranslate"><span class="pre">vtoolbox.mltbx</span></code>, remove it from <strong>Home &gt; Add-Ons &gt;
+Manage Add-Ons</strong>. Otherwise, type <code class="code docutils literal notranslate"><span class="pre">vtbud</span></code> from the Matlab prompt.</p>
 <table class="docutils footnote" frame="void" id="id2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">

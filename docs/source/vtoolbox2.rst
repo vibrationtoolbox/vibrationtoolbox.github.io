@@ -19,7 +19,15 @@ Please see the `python manual <http://vibrationtoolbox.github.io/vibration_toolb
 The Engineering Vibration Toolbox for `Matlab`_
 -----------------------------------------------------------
 
-The Engineering Vibration Toolbox can be installed by downloading
+**Recommended install:** download ``vtoolbox.mltbx`` from the
+`latest GitHub Release <https://github.com/vibrationtoolbox/vtoolbox/releases/latest>`_
+and double-click it (or run ``matlab.addons.install('vtoolbox.mltbx')``
+from the Matlab_ command console). Matlab_'s Add-On Manager installs it
+and sets up the path automatically -- no admin rights are needed, and it
+can be removed cleanly at any time from **Home > Add-Ons > Manage
+Add-Ons**.
+
+Legacy install: the Engineering Vibration Toolbox can also be installed by downloading
 `vtbud.m`_ and executing it from within Matlab_. Executing it after installation
 later updates or removes the toolbox per user selection.
 
@@ -78,7 +86,8 @@ ASCII (text) format.
 
 Removing the Engineering Vibration Toolbox:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Type :code:`vtbud` from the Matlab prompt.
+If you installed via ``vtoolbox.mltbx``, remove it from **Home > Add-Ons >
+Manage Add-Ons**. Otherwise, type :code:`vtbud` from the Matlab prompt.
 
 .. _ovinstall:
 
