@@ -152,10 +152,6 @@ Installing, Updating, and Removing The Toolbox
 Windows Installation
 ********************
 
-`Click on this
-<https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip>`_
-to download the vibration toolbox to your Downloads folder.
-
 Copy and paste this into your Octave window
 
 .. code-block:: octave
@@ -179,9 +175,8 @@ Linux and MacOS are very similar underneath, so instructions apply equally.
 
 .. code-block:: octave
 
-   [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
-   delete('vtoolbox.zip')
+   pkg install https://github.com/vibrationtoolbox/ovtoolbox/releases/latest/download/vtoolbox.tar.gz
+   pkg load vtoolbox
    vtb
    ;
 
@@ -194,10 +189,10 @@ the install for you (copy and paste this at the Octave prompt)
 		vtbud
 		delete('vtbud.m')
 
-**Note**: If you use the Download button on `github <github.com>`_, you **must** rename
-the downloaded file to :code:`vtoolbox.zip` and manually use
-:code:`pkg install vtoolbox.zip` after renaming the downloaded ``zip``
-file to ``vtoolbox.zip``.
+**Note**: If you download ``vtoolbox.tar.gz`` from the `latest release
+<https://github.com/vibrationtoolbox/ovtoolbox/releases/latest>`_ yourself, install it with
+:code:`pkg install vtoolbox.tar.gz`. Do not use the "Source code" archives that
+GitHub attaches to each release.
 
 .. note::
 
@@ -206,16 +201,14 @@ file to ``vtoolbox.zip``.
 
 To update:
 **********
-To update, run :code:`vtbud` in `Octave`_ if you have updated since Feb 23, 2016.
+To update, run :code:`vtbud` in `Octave`_. It installs the latest release and does nothing if you are already current.
 
 Otherwise, run `Octave`_ and paste the following to the prompt:
 
 .. code-block:: octave
 
    pkg uninstall vtoolbox
-   [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
-   delete('vtoolbox.zip')
+   pkg install https://github.com/vibrationtoolbox/ovtoolbox/releases/latest/download/vtoolbox.tar.gz
    ;
 
 
@@ -239,12 +232,9 @@ To remove it completely, in `Octave`_
 .. code-block:: octave
 
    pkg uninstall vtoolbox
-   [s, success, message]=urlwrite('https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip','vtoolbox.zip')
-   pkg install vtoolbox.zip
-   delete('vtoolbox.zip')
    ;
 
-You may have to look around and make sure no files ``vtoolbox.zip``, ``master.zip``, or similar exist.
+You may have to look around and make sure no files ``vtoolbox.tar.gz``, ``vtoolbox.zip``, ``master.zip``, or similar exist.
 
 *Why the semi-colons?* It's my way of making sure you don't leave the
 last command unexecuted.
@@ -385,7 +375,7 @@ Microsoft Corp. Unix is a registered trademark of AT&T.
 
 .. _Octave: http://www.octave.org/
 
-.. _`Octave Engineering Vibration Toolbox`: https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip
+.. _`Octave Engineering Vibration Toolbox`: https://github.com/vibrationtoolbox/ovtoolbox/releases/latest
 
 .. _`Octave Engineering Vibration Toolbox distribution site`: https://github.com/vibrationtoolbox/ovtoolbox
 

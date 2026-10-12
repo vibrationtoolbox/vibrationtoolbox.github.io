@@ -32,7 +32,7 @@ know most of `Octave <http://www.octave.org>`__. Most students will hardly know 
 except that it's free! The *Octavized*
 toolbox can be found `here <https://github.com/vibrationtoolbox/ovtoolbox>`__, but is more easily installed using the :ref:`ovinstall`. Further, the licensing is
 less restrictive (no charge for professional use!). The entire archive
-can be `downloaded as a zip file <https://github.com/vibrationtoolbox/ovtoolbox/archive/master.zip>`__. Please
+can be `downloaded from the latest release <https://github.com/vibrationtoolbox/ovtoolbox/releases/latest>`__. Please
 refer to the `Octave web site <http://www.octave.org>`__ for details on obtaining and installing
 `Octave <http://www.octave.org>`__.
 
